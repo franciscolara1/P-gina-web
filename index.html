@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css"rel="stylesheet" type="text/css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <style>
+      #contenido{
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0ms, opacity 0.5s linear;
+    }
+    #contenido2{
+      visibility: visible;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+    } 
+    </style>
+  </head>
+  <body>
+  <!------------------------------- MENU ----------------------->
+    <nav class="navbar navbar-expand-lg menu">
+        <div class="container">
+          <a class="navbar-brand logo" href="#"style="color:white;">
+            <img src="img/roses.svg" alt="Logo" width="60" height="84" class="d-inline-block align-text-center rosa">
+            DarkArt</a>
+            <div clas="menu-letras"id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" id="texto-menu">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html"id="texto-menu">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"id="texto-menu">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"id="texto-menu">Disabled</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+  <div class="container cuerpo sec-portfolio-js" id="secPortfolio">
+    <!-- Carrousel -->
+  <div id="carouselExampleCaptions" class="carousel slide carrusel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Arte japones/1.jpg" class="imagen-1" alt="japones">
+        <div class="carousel-caption d-none d-md-block sombreado1">
+          <h1><a id="enlace-arte-japones" href="#"onclick="Mostrar()">Arte Japonés.</a></h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Arte/surrealismo2.jpg" class="imagen-1" alt="surrealismo">
+        <div class="carousel-caption d-none d-md-block sombreado1">
+          <h1><a id="enlace-arte-japones2" href="#"onclick="Mostrar2()">Surrealismo</a></h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"style="margin-left:160px;">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"style="margin-right:160px;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!---------------------- CUERPO ------------------>
+     <div class="container primera-columna" id="contenido">
+      <img src="/img/Arte japones/dragon.png" alt="flor" class="animado"style="width:490px;position:absolute;right:1px;top:600px;left:1480px;">
+      <img src="/img/Arte japones/flor marco.png" alt="flor" class="animado"style="width:390px;position:absolute;right:1550px;top:800px;">
+      <img src="/img/Arte japones/flores 2.png" alt="flor" class="animado"style="width:390px;position:absolute;right:1px;top:1540px;">
+      <img src="/img/Arte japones/flores 3.png" alt="flor" class="animado"style="width:390px;position:absolute;right:1523px;top:1700px;">
+      <img src="/img/Arte japones/hojas.png"id="hoja1" alt="flor" class="animado"style="width:190px;position:absolute;right:1723px;top:3100px;">
+      <img src="/img/Arte japones/hojas.png"id="hoja1" alt="flor" class="animado"style="width:190px;position:absolute;right:1523px;top:3200px;">
+      <img src="/img/Arte japones/hojas.png"id="hoja1" alt="flor" class="animado"style="width:190px;position:absolute;right:1523px;top:2900px;">
+      <img src="/img/Arte japones/hojas2.png"id="hoja1" alt="flor" class="animado"style="width:190px;position:absolute;left:1723px;top:3100px;">
+      <img src="/img/Arte japones/hojas2.png"id="hoja1" alt="flor" class="animado"style="width:190px;position:absolute;left:1523px;top:3200px;">
+      <img src="/img/Arte japones/hojas2.png"id="hoja1" alt="flor" class="animado"style="width:190px;position:absolute;left:1523px;top:2900px;">
+      <img src="/img/Arte japones/florecita.png"id="hoja1" alt="flor" class="animado"style="width:290px;position:absolute;right:1623px;top:4100px;">
+      <img src="/img/Arte japones/florecita 2.png"id="hoja1" alt="flor" class="animado"style="width:290px;position:absolute;left:1623px;top:4100px;">
+
+
+<!-- PRIMERA IMAGEN -->
+        <div class="card bg-warning" style="width:780px;height: 440px;position:relative;right:20px">
+          <img src="img/Arte japones/1.jpg" alt="arboles" class="imagen img-btn-modal-js card-img-top" style="height: 400px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px">
+            <h5 class="card-title"style="color:purple"><b>Arboles</b> – Katsushika Hokusai</h5>
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio1">★</label><!--
+              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio2">★</label><!--
+              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio3">★</label><!--
+              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio4">★</label><!--
+              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio5">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+<!-- SEGUNDA IMAGEN -->
+        <div class="card bg-warning" style="width:520px;height: 540px;position:relative;left:130px">
+          <img src="img/Arte japones/5.jpg" alt="tigre" class="imagen img-btn-modal-js card-img-top" style="height: 700px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position: relative;bottom: 10px;">
+            <h5 class="card-title"style="color:purple"><b>Tigre - </b></h5>&nbsp;
+            <p class="card-text"style="color:purple">Kawanabe Kyosai</p>
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:54px">
+            <p class="clasificacion">
+              <input id="radio10" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio10">★</label><!--
+              --><input id="radi12" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio12">★</label><!--
+              --><input id="radio13" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio13">★</label><!--
+              --><input id="radio14" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio14">★</label><!--
+              --><input id="radio15" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio15">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+<!-- TERCERA IMAGEN -->
+        <div class="card bg-warning" style="width:680px;height: 440px;position:relative;bottom:80px;right: 20px;margin-top: 20px;">
+          <img src="img/Arte japones/3.jpg" alt="Olas" class="imagen img-btn-modal-js card-img-top" style="height: 400px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px;">
+            <h5 class="card-title"style="color:purple;"><b>La gran ola de Kanagawa</b> – Katsushika Hokusai</h5> 
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio21" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio21">★</label><!--
+              --><input id="radio22" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio22">★</label><!--
+              --><input id="radio23" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio23">★</label><!--
+              --><input id="radio24" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio24">★</label><!--
+              --><input id="radio25" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio25">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+<!-- CUARTA IMAGEN -->
+        <div class="card bg-warning" style="width:680px;height: 440px;position:relative;bottom:10px;left: 30px;margin-top: 40px;">
+          <img src="img/Arte japones/4.jpg" alt="Volcan" class="imagen img-btn-modal-js card-img-top" style="height: 400px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px;">
+            <h5 class="card-title"style="color:purple;"><b>Fuji Rojo</b> – Katsushika Hokusai</h5> 
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio21" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio21">★</label><!--
+              --><input id="radio22" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio22">★</label><!--
+              --><input id="radio23" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio23">★</label><!--
+              --><input id="radio24" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio24">★</label><!--
+              --><input id="radio25" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio25">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+<!-- QUINTA IMAGEN -->
+        <div class="card bg-warning" style="width:680px;height: 940px;position:relative;bottom:80px;right: 20px;margin-top: 40px;">
+          <img src="img/Arte japones/6.jpg" alt="Olas" class="imagen img-btn-modal-js card-img-top" style="height: 900px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px;">
+            <h5 class="card-title"style="color:purple;"><b>Tres bellezas de nuestros días</b> – Kotagawa Utamaro</h5> 
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio21" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio21">★</label><!--
+              --><input id="radio22" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio22">★</label><!--
+              --><input id="radio23" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio23">★</label><!--
+              --><input id="radio24" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio24">★</label><!--
+              --><input id="radio25" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio25">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+<!-- SEXTA IMAGEN -->
+        <div class="card bg-warning" style="width:680px;height: 940px;position:relative;bottom:80px;left: 30px;margin-top: 120px;">
+          <img src="img/Arte japones/7.jpg" alt="Olas" class="imagen img-btn-modal-js card-img-top" style="height: 900px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px;">
+            <h5 class="card-title"style="color:purple;"><b>Otani Oniji III </b>– Toshusai Sharaku</h5> 
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio21" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio21">★</label><!--
+              --><input id="radio22" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio22">★</label><!--
+              --><input id="radio23" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio23">★</label><!--
+              --><input id="radio24" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio24">★</label><!--
+              --><input id="radio25" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio25">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+        <h1 class="frase">....Siente el sonido de los arboles con el viento.</h1>
+        <br>
+<!-- SEPTIMA IMAGEN -->
+        <div class="card bg-warning" style="width:1080px;height: 340px;position:relative;bottom:80px;left: 110px;margin-top: 20px;">
+          <img src="img/Arte japones/8.jpg" alt="Olas" class="imagen img-btn-modal-js card-img-top" style="height: 300px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px;">
+            <h5 class="card-title"style="color:purple;"><b>El gran ciprés </b> – Kano Eitoku</h5> 
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio21" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio21">★</label><!--
+              --><input id="radio22" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio22">★</label><!--
+              --><input id="radio23" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio23">★</label><!--
+              --><input id="radio24" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio24">★</label><!--
+              --><input id="radio25" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio25">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+<!-- OCTAVA IMAGEN -->
+<br>
+        <div class="card bg-warning" style="width:1080px;height: 390px;position:relative;bottom:80px;left: 110px;margin-top: 40px;">
+          <img src="img/Arte japones/11.jpg" alt="Olas" class="imagen img-btn-modal-js card-img-top" style="height: 400px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px;">
+            <h5 class="card-title"style="color:purple;"><b>Arce</b> – Hasegawa Tohaku</h5> 
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio21" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio21">★</label><!--
+              --><input id="radio22" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio22">★</label><!--
+              --><input id="radio23" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio23">★</label><!--
+              --><input id="radio24" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio24">★</label><!--
+              --><input id="radio25" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio25">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+     
+<!-- NOVENA IMAGEN -->
+<br>
+        <div class="card bg-warning" style="width:1080px;height: 430px;position:relative;bottom:80px;left: 110px;margin-top: 40px;">
+          <img src="img/Arte japones/10.jpg" alt="Olas" class="imagen img-btn-modal-js card-img-top" style="height: 400px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px;">
+            <h5 class="card-title"style="color:purple;"><b>Sansui Chokan</b> – Sesshu Toyo</h5> 
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio21" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio21">★</label><!--
+              --><input id="radio22" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio22">★</label><!--
+              --><input id="radio23" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio23">★</label><!--
+              --><input id="radio24" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio24">★</label><!--
+              --><input id="radio25" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio25">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+<!-- DECIMA IMAGEN -->
+<div class="card bg-warning" style="width:480px;height: 640px;position:relative;right:530px;top:440px">
+          <img src="img/Arte japones/9.jpg" alt="arboles" class="imagen img-btn-modal-js card-img-top" style="height: 600px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px">
+            <h5 class="card-title"style="color:purple"><b>Sabio leyendo </b> - Tensho Shubun</h5>
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio1">★</label><!--
+              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio2">★</label><!--
+              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio3">★</label><!--
+              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio4">★</label><!--
+              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio5">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+<!-- imagen 11 -->
+<div class="card bg-warning" style="width:620px;height: 640px;position:relative;left:600px;bottom:200px">
+          <img src="img/Arte japones/12.jpg" alt="arboles" class="imagen img-btn-modal-js card-img-top" style="height: 600px;"data-bs-toggle="modal"
+        data-bs-target="#modal-portfolio">
+        <div class="card-body">
+          <div class="card-text" style="display:flex; flex-direction: row;position:relative;bottom:10px">
+            <h5 class="card-title"style="color:purple"><b>Calabaza </b>– Yayoi Kusama</h5>
+          </div>
+          <form style="margin-bottom: 10px;position:relative;bottom:50px">
+            <p class="clasificacion">
+              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio1">★</label><!--
+              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio2">★</label><!--
+              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio3">★</label><!--
+              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio4">★</label><!--
+              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio5">★</label>
+            </p>
+          </form>
+        </div>
+        </div>
+     </div>
+   
+   <!-- General Modal -->
+<div class="col-9 modal fade" id="modal-portfolio">
+  <div class="modal-dialog position-relative modal-dialog-centered">
+      <img src="" alt=""class="img-modal-js"style="width:1000px;">
+  </div>
+ </div>
+   
+<!-------- CUERPO2 ------------------>
+
+<div class="container primera-columna" id="contenido2">
+<!-- IMAGENES-->
+
+
+
+  <img src="img/Arte/icono 1.png" alt="reloj" class="surreal"id="surreal"style="position:absolute; right:1240px;top:1100px;">
+  <img src="img/Arte/icono 2.png" alt="reloj" class="surreal"id="surreal2">
+
+
+
+
+
+
+
+<!--------------------------->
+      
+  <img src="img/Arte/surrealismo1.png" alt="mujer" class="imagen img-btn-modal-js" style="height: 460px;margin-top: 10px; margin:10px;"data-bs-toggle="modal"
+  data-bs-target="#modal-portfolio">
+  <img src="img/Arte/surrealismo3.jpg" alt="Leon" class="imagen img-btn-modal-js" style="height: 460px;margin-top: 10px;position:relative;left:60px;"data-bs-toggle="modal"
+  data-bs-target="#modal-portfolio">
+  <img src="img/Arte/surrealismo5.jpg" alt="pareja"class="imagen img-btn-modal-js"style="height:480px;margin-left:10px"data-bs-toggle="modal"
+  data-bs-target="#modal-portfolio">
+  <img src="img/Arte/surrealismo4.jpg" alt="globo" class="imagen img-btn-modal-js"style="height:440px;bottom:10px; margin:10px;position: relative;left:30px;top:10px"data-bs-toggle="modal"
+  data-bs-target="#modal-portfolio">
+  <img src="img/Arte/surrealismo2.jpg" alt="" class="imagen img-btn-modal-js"style="margin:20px;position:relative;left:100px"data-bs-toggle="modal"
+  data-bs-target="#modal-portfolio">
+  <br>
+  <img src="" alt="tigre"class="imagen img-btn-modal-js" style="height: 460px;margin-top: 10px;"data-bs-toggle="modal"
+  data-bs-target="#modal-portfolio">
+  <img src="" alt="" class="imagen img-btn-modal-js"data-bs-toggle="modal"
+  data-bs-target="#modal-portfolio">
+</div>
+<div class="container"id="margin-bottom">
+  <section class="justify-content-center">
+    <div class="col-9 col-lg-7 text-center py-4 px-3 shadow caja"id="contact">
+        <p class="h6 text-muted fw-light">
+          Necesitas una página web? Contáctame
+        </p>
+        <a href="mailto:tronccifrancisco@gmail.com"class="text-decoration-none h3">tronccifrancisco@gmail.com</a>
+    </div>
+
+  </section>
+</div>
+  </div>
+
+  <footer class="bg-purple text-center p-4">
+     Francisco 2023.All rights reserved
+    
+</footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
+    <script src="/mostrar.js"></script>
+    <script src="/contact.js"></script>
+    <script src="/mierda.js"></script>
+    
+  </body>
+</html>
